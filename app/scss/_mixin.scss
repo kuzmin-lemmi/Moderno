@@ -3,4 +3,15 @@
     color: $color;
     font-size: $size;
 }
-    
+@mixin f500{
+    font-family:'Roboto', sans-serif; 
+    font-weight:500;
+}
+@mixin f700{
+    font-family:'Roboto', sans-serif; 
+    font-weight:700;
+}
+@mixin dfb{
+    display: flex;
+    justify-content: space-between;
+}

@@ -59,10 +59,9 @@
     }
 
     a {
-        font-family: 'Roboto', sans-serif;
+        @include f500;
         color: #fff;
         font-size: 14px;
-        font-weight: 500;
     }
 }
 
@@ -79,7 +78,7 @@
     &__inner {
         padding: 155px 0px 100px;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        @include f500;
         color: #fff;
 
         &-title {
@@ -177,7 +176,7 @@
     max-width: 442px;
     width: 100%;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
-    font-family: $Roboto;
+    @include f500;
     margin-bottom: 30px;
     transition: all .3s;
 
@@ -289,8 +288,10 @@
 // product-slider=================
 .product-slider {
     padding: 110px 0px 120px;
+
     .products__item {
         box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+
         &:hover {
             box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
         }
@@ -306,7 +307,7 @@
             margin-right: 3px;
 
             &.slick-active {
-                button{
+                button {
                     background-color: $green;
                 }
             }
@@ -322,5 +323,68 @@
                 outline: none;
             }
         }
+    }
+}
+
+// advantages============
+.advantages {
+    background-color: $bg;
+    padding: 110px 0;
+}
+
+.advantages-title {
+    color: #fff;
+}
+
+.advantages__inner {
+    @include dfb;
+}
+
+.advantages__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0 15px;
+    svg{
+        transition: all .3s;
+    }
+
+    &:hover {
+        .advantages__item-images {
+            background-color: $green;
+        }
+        .advantages__item-title{
+            color:$green;
+        }
+        .advantages__item-images{
+            svg{
+                fill: #fff;
+            }
+        }
+    }
+
+    &-images {
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        transition: all .3s;
+    }
+
+    &-title {
+        font-size: 24px;
+        @include f500;
+        color: rgb(255, 255, 255);
+        margin-bottom: 25px;
+        transition: all .3s;
+    }
+
+    &-text {
+        font-family: $Roboto-Regular;
+        font-size: 15px;
+        color: #b0bec5;
     }
 }
