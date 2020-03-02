@@ -75,6 +75,17 @@
     background-size: cover;
     min-height: 533px;
 
+    &.page-search {
+        min-height: 230px;
+
+        .search__inner {
+            padding: 55px 0 70px;
+            &-text{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     &__inner {
         padding: 155px 0px 100px;
         text-align: center;
@@ -103,7 +114,8 @@
             input {
                 display: block;
                 width: 100%;
-                box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.90);
+                // box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.90);
+                box-shadow: 0px 1px 10px 0px rgba(100, 100, 100, 0.75);
                 border-radius: 4px;
                 height: 56px;
                 border: none;
@@ -446,7 +458,7 @@
 .tutorial__item {
     &-images {
         min-height: 270px;
-        @include background; 
+        @include background;
     }
 
     &-title {
@@ -457,5 +469,185 @@
         padding: 30px 10px;
         color: $bg;
         text-align: center;
+    }
+}
+
+// footer ==========
+.footer {
+    background-color: $bg;
+
+    &__inner {
+        @include dfb;
+        padding: 100px 0 80px;
+    }
+}
+
+.footer__copy {
+    border-top: 1px solid #424d53;
+}
+
+.footer__copy-text {
+    text-align: center;
+    font-family: $Roboto-Regular;
+    color: #919699;
+    padding: 25px 0;
+}
+
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+
+    &-menu {
+        max-width: 220px;
+    }
+
+    &-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
+
+.footer__info {
+    margin-top: 18px;
+    @include f500;
+    color: #fff;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+        font-family: 'icomoon';
+        content: "\f041";
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.footer__info-pfone {
+    &::before {
+        font-family: 'icomoon';
+        content: "\f095";
+    }
+}
+
+.footer__col-list {
+    a {
+        margin-bottom: 15px;
+        color: #b7c3c8;
+        padding-left: 22px;
+        position: relative;
+
+        &::before {
+            content: "\f105";
+            color: $green;
+            font-size: 18px;
+            font-family: 'icomoon';
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+.footer__social-link {
+    margin-bottom: 33px;
+
+    li {
+        display: inline-block;
+
+        &+li {
+            margin-left: 7px;
+        }
+    }
+
+    a {
+        width: 28px;
+        height: 28px;
+        background-image: url(../images/content/css_sprites.png);
+    }
+}
+
+.link-facebook {}
+
+.link-twitter {
+    background-position: -28px -28px;
+}
+
+.link-youtube {
+    background-position: -56px -0;
+}
+
+.link-pinterest {
+    background-position: -28px -0;
+}
+
+.link-linledin {
+    background-position: -0 -28px;
+}
+
+.footer__form-title {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer__form {
+    position: relative;
+
+    input {
+        border: none;
+        background-color: #2f3c43;
+        display: block;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 50px;
+
+        &::placeholder {
+            color: #697378;
+        }
+    }
+
+    button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        height: 40px;
+        border: none;
+        width: 43px;
+        cursor: pointer;
+
+        &::before {
+            content: "\f124";
+            position: absolute;
+            font-family: "icomoon";
+            color: #fff;
+            font-size: 20px;
+            top: 10px;
+            left: 13px;
+        }
     }
 }
