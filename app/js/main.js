@@ -9,8 +9,26 @@ $(function () {
 
     $('.product-slider__inner').slick({
         dots: true,
-        arrows:false,
-        slidesToShow:4,
-        slidesToScroll:4
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4
     });
+    
+    $('.js-range-slider').ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 500,
+        grid: true
+    });
+    
+    $('.product-page__items').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    });
+    
+
 });

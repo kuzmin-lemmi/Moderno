@@ -4,7 +4,7 @@
 @import 'mixin';
 
 
-// Start header===========
+// =================Start header===========================
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@
     }
 }
 
-// END header===========
+// ================= END Start header===========================
 
 
 // Start search===========
@@ -80,7 +80,8 @@
 
         .search__inner {
             padding: 55px 0 70px;
-            &-text{
+
+            &-text {
                 margin-bottom: 20px;
             }
         }
@@ -649,5 +650,61 @@
             top: 10px;
             left: 13px;
         }
+    }
+}
+
+// product-page ==========
+.product-page__inner {
+    display: flex;
+}
+
+.product-page__aside {
+    margin-right: 30px;
+
+}
+
+.aside__item {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 0 32px 32px;
+    margin-bottom: 30px;
+    width: 270px;
+}
+
+.aside__title {
+    border-bottom: 1px solid #dedede;
+    font-size: 20px;
+    color: $bg;
+    padding: 22px 0 19px;
+    @include f700;
+}
+
+.category__list {
+    padding-top: 10px;
+
+    li {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            content: "\f105";
+            color: #8bc34a;
+            font-size: 18px;
+            font-family: 'icomoon';
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    a {
+        color: $bg;
+    }
+
+    span {
+        color: #90a4ae;
+        margin-left: 10px;
     }
 }
