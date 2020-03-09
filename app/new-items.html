@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <div class="content page_content">
-<!------------------------------ header ----------------------------------------->
+            <!------------------------------ header ----------------------------------------->
             <header class="header">
                 <div class="header__top">
                     <div class="container">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </header>
-<!-- ---------------------------- search ----------------------------------------->
+            <!------------------------------ search ----------------------------------------->
             <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
                 <div class="container">
                     <div class="search__inner">
@@ -75,8 +75,8 @@
                         </div>
                     </div>
                 </div>
-            </section> 
-<!---------------------------- breadcrumbs -------------------------------------->
+            </section>
+            <!---------------------------- breadcrumbs -------------------------------------->
             <div class="breadcrumbs">
                 <div class="container">
                     <div class="breadcrumbs__inner">
@@ -86,13 +86,15 @@
                         </ul>
                     </div>
                 </div>
-            </div> 
-
-<!---------------------------- product-page ------------------------------------->
+            </div>
+            <!---------------------------- product-page ------------------------------------->
             <section class="product-page">
                 <div class="container">
                     <div class="product-page__inner">
+                        <!---------------------------- aside ------------------------------------->
                         <aside class="product-page__aside">
+
+
                             <div class="category aside__item">
                                 <div class="aside__title">
                                     Categories
@@ -105,6 +107,8 @@
                                     <li><a href="#">Components</a><span>(40)</span></li>
                                 </ul>
                             </div>
+
+
                             <div class="price-range aside__item">
                                 <div class="aside__title">
                                     Price Range
@@ -114,28 +118,83 @@
                                     <button type="submit">Search</button>
                                 </form>
                             </div>
+
+
                             <div class="top-sellers aside__item">
                                 <div class="aside__title">
                                     Top 10 Sellers
                                 </div>
-                                <div class="products__item">
-                                    <a href="#" class="products__item-img"
-                                        style="background-image: url(images/content/product-item.jpg);"></a>
-                                    <div class="products__item-content">
-                                        <div class="products__item-name">
-                                            <a href="#" class="products__item-title">Responsive Mobile APP</a>
-                                            <a href="#" class="products__item-category">Site Template</a>
-                                        </div>
-                                        <div class="products__item-price">$19</div>
-                                    </div>
-                                    <div class="products__item-info">
-                                        <a class="products__item-author" href="#">
-                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+
+                                <div class="aside__product-item">
+                                    <div class="products__item">
+                                        <a href="#" class="products__item-img"
+                                            style="background-image: url(images/content/product-item.jpg);"></a>
+                                        <div class="products__item-content">
+                                            <div class="products__item-name">
+                                                <a href="#" class="products__item-title">Mobile APP</a>
+                                                <a href="#" class="products__item-category">Site Template</a>
                                             </div>
-                                            <span>Radiustheme</span>
-                                        </a>
-                                        <div class="products__item-star">
-                                            <div class="rate-star"></div>(<span>05</span>)
+                                            <div class="products__item-price">$19</div>
+                                        </div>
+                                        <div class="products__item-info">
+                                            <a class="products__item-author" href="#">
+                                                <div class="avatar"
+                                                    style="background-image: url(images/content/user.jpg);">
+                                                </div>
+                                                <span>Radius</span>
+                                            </a>
+                                            <div class="products__item-star">
+                                                <div class="rate-star"></div><span
+                                                    class="products__item-starnum">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="products__item">
+                                        <a href="#" class="products__item-img"
+                                            style="background-image: url(images/content/product-item.jpg);"></a>
+                                        <div class="products__item-content">
+                                            <div class="products__item-name">
+                                                <a href="#" class="products__item-title">Mobile APP</a>
+                                                <a href="#" class="products__item-category">Site Template</a>
+                                            </div>
+                                            <div class="products__item-price">$19</div>
+                                        </div>
+                                        <div class="products__item-info">
+                                            <a class="products__item-author" href="#">
+                                                <div class="avatar"
+                                                    style="background-image: url(images/content/user.jpg);">
+                                                </div>
+                                                <span>Radius</span>
+                                            </a>
+                                            <div class="products__item-star">
+                                                <div class="rate-star"></div><span
+                                                    class="products__item-starnum">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="products__item">
+                                        <a href="#" class="products__item-img"
+                                            style="background-image: url(images/content/product-item.jpg);"></a>
+                                        <div class="products__item-content">
+                                            <div class="products__item-name">
+                                                <a href="#" class="products__item-title">Mobile APP</a>
+                                                <a href="#" class="products__item-category">Site Template</a>
+                                            </div>
+                                            <div class="products__item-price">$19</div>
+                                        </div>
+                                        <div class="products__item-info">
+                                            <a class="products__item-author" href="#">
+                                                <div class="avatar"
+                                                    style="background-image: url(images/content/user.jpg);">
+                                                </div>
+                                                <span>Radius</span>
+                                            </a>
+                                            <div class="products__item-star">
+                                                <div class="rate-star"></div><span
+                                                    class="products__item-starnum">(05)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -146,9 +205,17 @@
 
                         <div class="product-page__content">
                             <div class="product-page__filter">
-
+                                <div class="product-page__filter-sort"> <button
+                                        class="icon-sort-amount-desc"></button>Sort by: New Items <button
+                                        class="icon-unsorted"></button></div>
+                                <div class="product-page__filter-sort">
+                                    <button class="icon-th-large active"></button>
+                                    <button class="icon-th-list"></button>
+                                </div>
                             </div>
+
                             <div class="product-page__items">
+
                                 <div class="products__item">
                                     <a href="#" class="products__item-img"
                                         style="background-image: url(images/content/product-item.jpg);"></a>
@@ -156,8 +223,12 @@
                                         <div class="products__item-name">
                                             <a href="#" class="products__item-title">Responsive Mobile APP</a>
                                             <a href="#" class="products__item-category">Site Template</a>
+                                            <div class="products__item-text">Pimply dummy text of the printing and
+                                                typesetting industry. </div>
                                         </div>
-                                        <div class="products__item-price">$19</div>
+                                        <div class="products__item-price">$19
+                                            <span>Sales ( 14 )</span>
+                                        </div>
                                     </div>
                                     <div class="products__item-info">
                                         <a class="products__item-author" href="#">
@@ -168,8 +239,13 @@
                                         <div class="products__item-star">
                                             <div class="rate-star"></div>(<span>05</span>)
                                         </div>
+                                        <div class="products__item-list">
+                                            <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                                            <div class="icon-heart-o">(<span>20</span>)</div>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div class="products__item">
                                     <a href="#" class="products__item-img"
                                         style="background-image: url(images/content/product-item.jpg);"></a>
@@ -177,8 +253,12 @@
                                         <div class="products__item-name">
                                             <a href="#" class="products__item-title">Responsive Mobile APP</a>
                                             <a href="#" class="products__item-category">Site Template</a>
+                                            <div class="products__item-text">Pimply dummy text of the printing and
+                                                typesetting industry. </div>
                                         </div>
-                                        <div class="products__item-price">$19</div>
+                                        <div class="products__item-price">$19
+                                            <span>Sales ( 14 )</span>
+                                        </div>
                                     </div>
                                     <div class="products__item-info">
                                         <a class="products__item-author" href="#">
@@ -189,8 +269,13 @@
                                         <div class="products__item-star">
                                             <div class="rate-star"></div>(<span>05</span>)
                                         </div>
+                                        <div class="products__item-list">
+                                            <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                                            <div class="icon-heart-o">(<span>20</span>)</div>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div class="products__item">
                                     <a href="#" class="products__item-img"
                                         style="background-image: url(images/content/product-item.jpg);"></a>
@@ -198,8 +283,12 @@
                                         <div class="products__item-name">
                                             <a href="#" class="products__item-title">Responsive Mobile APP</a>
                                             <a href="#" class="products__item-category">Site Template</a>
+                                            <div class="products__item-text">Pimply dummy text of the printing and
+                                                typesetting industry. </div>
                                         </div>
-                                        <div class="products__item-price">$19</div>
+                                        <div class="products__item-price">$19
+                                            <span>Sales ( 14 )</span>
+                                        </div>
                                     </div>
                                     <div class="products__item-info">
                                         <a class="products__item-author" href="#">
@@ -210,8 +299,106 @@
                                         <div class="products__item-star">
                                             <div class="rate-star"></div>(<span>05</span>)
                                         </div>
+                                        <div class="products__item-list">
+                                            <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                                            <div class="icon-heart-o">(<span>20</span>)</div>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="products__item">
+                                    <a href="#" class="products__item-img"
+                                        style="background-image: url(images/content/product-item.jpg);"></a>
+                                    <div class="products__item-content">
+                                        <div class="products__item-name">
+                                            <a href="#" class="products__item-title">Responsive Mobile APP</a>
+                                            <a href="#" class="products__item-category">Site Template</a>
+                                            <div class="products__item-text">Pimply dummy text of the printing and
+                                                typesetting industry. </div>
+                                        </div>
+                                        <div class="products__item-price">$19
+                                            <span>Sales ( 14 )</span>
+                                        </div>
+                                    </div>
+                                    <div class="products__item-info">
+                                        <a class="products__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="products__item-star">
+                                            <div class="rate-star"></div>(<span>05</span>)
+                                        </div>
+                                        <div class="products__item-list">
+                                            <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                                            <div class="icon-heart-o">(<span>20</span>)</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__item">
+                                    <a href="#" class="products__item-img"
+                                        style="background-image: url(images/content/product-item.jpg);"></a>
+                                    <div class="products__item-content">
+                                        <div class="products__item-name">
+                                            <a href="#" class="products__item-title">Responsive Mobile APP</a>
+                                            <a href="#" class="products__item-category">Site Template</a>
+                                            <div class="products__item-text">Pimply dummy text of the printing and
+                                                typesetting industry. </div>
+                                        </div>
+                                        <div class="products__item-price">$19
+                                            <span>Sales ( 14 )</span>
+                                        </div>
+                                    </div>
+                                    <div class="products__item-info">
+                                        <a class="products__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="products__item-star">
+                                            <div class="rate-star"></div>(<span>05</span>)
+                                        </div>
+                                        <div class="products__item-list">
+                                            <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                                            <div class="icon-heart-o">(<span>20</span>)</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__item">
+                                    <a href="#" class="products__item-img"
+                                        style="background-image: url(images/content/product-item.jpg);"></a>
+                                    <div class="products__item-content">
+                                        <div class="products__item-name">
+                                            <a href="#" class="products__item-title">Responsive Mobile APP</a>
+                                            <a href="#" class="products__item-category">Site Template</a>
+                                            <div class="products__item-text">Pimply dummy text of the printing and
+                                                typesetting industry. </div>
+                                        </div>
+                                        <div class="products__item-price">$19
+                                            <span>Sales ( 14 )</span>
+                                        </div>
+                                    </div>
+                                    <div class="products__item-info">
+                                        <a class="products__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="products__item-star">
+                                            <div class="rate-star"></div>(<span>05</span>)
+                                        </div>
+                                        <div class="products__item-list">
+                                            <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                                            <div class="icon-heart-o">(<span>20</span>)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+
+
                             </div>
                             <div class="pagination">
                                 <ul class="pagination__list">
@@ -225,9 +412,11 @@
 
                     </div>
                 </div>
-            </section> 
+            </section>
         </div>
-<!---------------------------- footer ------------------------------------->
+
+
+        <!---------------------------- footer ------------------------------------->
         <footer class="footer">
             <div class="footer__content">
                 <div class="container">
